@@ -9,13 +9,12 @@ function fillShape(id) {
     if (!fiels[id] && !gameOver) {
         if (currentShape == 'cross') {
             currentShape = 'circle';
-            document.getElementById('player-1').classList.remove('player-inactive');
-            document.getElementById('player-2').classList.add('player-inactive');
         } else {
             currentShape = 'cross';
-            document.getElementById('player-1').classList.add('player-inactive');
-            document.getElementById('player-2').classList.remove('player-inactive');
         }
+
+        document.getElementById('player-1').classList.toggle('player-inactive');
+        document.getElementById('player-2').classList.toggle('player-inactive');
 
         fiels[id] = currentShape;
         draw(id);
