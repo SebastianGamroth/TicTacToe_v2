@@ -1,6 +1,3 @@
-# TicTacToe
-This is an example for developerakademie.com,
-with revised code.
+# TicTacToe_v2
 
-
-https://sebastiangamroth.github.io/TicTacToe_v2
+This is an example of TicTacToe.
